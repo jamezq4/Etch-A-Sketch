@@ -134,5 +134,12 @@ body {
     width: 500px;
 }
 
+.color-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 

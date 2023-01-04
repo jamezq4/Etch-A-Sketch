@@ -53,3 +53,42 @@ body {
 
 }
 
+
+/*instructions */
+
+/*enable-color-display*/
+
+.buttons {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-left: 150px;
+    width: 250px;
+    font-size: 1.5em;
+    padding-bottom: 100px;
+}
+
+#choose-grid {
+
+    width: 250px;
+    height: 80px;
+    border: 0.1em solid #000000;
+    border-radius: 0.12em;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: aqua;
+    background-color: green;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align: center;
+    transition: all 0.15s;
+}
+
+
+#choose-grid:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+

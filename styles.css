@@ -121,5 +121,12 @@ body {
     padding: 20px;
 }
 
+.choose-color-instructions {
+    font-size: 22px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
 
 

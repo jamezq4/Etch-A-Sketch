@@ -77,8 +77,6 @@ body {
     margin-top: 20px;
 }
 
-/*enable-color-display*/
-
 .buttons {
 
     display: flex;
@@ -111,6 +109,16 @@ body {
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color: #FFFFFF;
     border-color: #FFFFFF;
+}
+
+
+.color-div.show-color-div {
+    width: 80px;
+    height: 80px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
 }
 
 

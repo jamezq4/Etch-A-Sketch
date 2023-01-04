@@ -30,3 +30,9 @@ body {
     font-weight: 900;
 }
 
+.content {
+
+    display: flex;
+    background-color: gray;
+}
+

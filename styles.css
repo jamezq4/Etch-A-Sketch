@@ -42,5 +42,14 @@ body {
     background-color: #FFFFFF;
 }
 
+/* row */
 
+/*column*/
+
+.side-content {
+    
+    display: flex;
+    flex-direction: column;
+
+}
 

@@ -139,7 +139,14 @@ body {
     flex-wrap: wrap;
 }
 
-
+.color-column.display-colors {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    border: 2px solid;
+    border-color: black;
+}
 
 
 

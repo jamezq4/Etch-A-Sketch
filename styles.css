@@ -62,8 +62,20 @@ body {
 
 }
 
+.instructions {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
 
-/*instructions */
+.enable-color-display {
+    display: flex;
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
 
 /*enable-color-display*/
 

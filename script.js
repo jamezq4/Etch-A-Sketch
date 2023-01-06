@@ -99,7 +99,7 @@ function changeGrid(e)
     }
 
     //remove justify content center so that page is displayed properly when grid is made
-    allContent.style.justifyContentt = '';
+    allContent.style.justifyContent = '';
 
     //function that puts everything in place when grid appears or changes type
     displaySideContent();
@@ -136,18 +136,35 @@ function chooseColor(e)
     })
 }
 
+function displaySideContent()
+{
+    //add class to color columns so that they can be displayed when the grid appears
+    let colorColumns = document.querySelectorAll('.color-column');
 
+    colorColumns.forEach((column) => {
+        column.classList.add("display-colors");
+    })
 
+    let colorDiv = document.querySelector('.color-div');
+    colorDiv.classList.add("show-color-div");
 
+    //add class to coloring instructions so that they display when grid appears
+    let colorChoosingInstructions = document.querySelector('.choose-color-instructions');
+    colorChoosingInstructions.textContent = 'Click on a color for coloring';
 
+    //add text to color label and its enabled value when grid appears 
+    let colorLabel = document.getElementById('color-label');
+    colorLabel.textContent = 'Coloring: ';
+    colorLabel.style.fontWeight = '700';
 
+    let enabledColoringValue = document.getElementById('enabled-value');
+    enabledColoringValue.textContent = 'Disabled';
+    enabledColoringValue.style.fontWeight = '700';
 
+    let instructions = document.querySelector('.instructions');
+    instructions.textContent = 'Left Click on the grid to enable/disable coloring';
 
-
-
-
-
-
+}
 
 
 // Main Body
@@ -168,7 +185,7 @@ gridTypeButton.addEventListener('click', changeGrid);
 
 //centering page on startup, will change when grid is added
 let allContent = document.querySelector('.content');
-allContent.style.justifyContentt = 'center';
+allContent.style.justifyContent = 'center';
 
 //Event listener for choosing colors from color pallete
 let colorPickingGrid = document.querySelector('.color-picking-grid');

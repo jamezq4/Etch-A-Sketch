@@ -123,6 +123,21 @@ function enableColoring(e)
     }
 }
 
+function chooseColor(e)
+{
+    let displayColorChoice = document.getElementById('display-color-choice');
+    let classNames = e.target.classList;
+    classNames.forEach(name => {
+        if (name === 'color-column' || name === 'display-colors')
+        {
+            globalRGBValue = getComputedStyle(e.target).backgroundColor;
+            displayColorChoice.style.backgroundColor = globalRGBValue;
+        }
+    })
+}
+
+
+
 
 
 

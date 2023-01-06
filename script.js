@@ -166,6 +166,15 @@ function displaySideContent()
 
 }
 
+function Clear()
+{
+    let gridColumns = document.querySelectorAll('.column');
+
+    gridColumns.forEach((column) => {
+        column.style.backgroundColor = '';
+    })
+}
+
 
 // Main Body
 let clicked = true;
@@ -190,3 +199,8 @@ allContent.style.justifyContent = 'center';
 //Event listener for choosing colors from color pallete
 let colorPickingGrid = document.querySelector('.color-picking-grid');
 colorPickingGrid.addEventListener('click', chooseColor);
+
+
+//Event listener for clear grid button
+let clearGridButton = document.getElementById('clear-all');
+clearGridButton.addEventListener('click', Clear);

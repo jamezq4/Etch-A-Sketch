@@ -105,6 +105,24 @@ function changeGrid(e)
     displaySideContent();
 }
 
+function enableColoring(e)
+{
+
+    let enabledValueDiv = document.getElementById('enabled-value');
+    if (clicked === true)
+    {
+        currentGrid.addEventListener('mouseover', changeTileColor);
+        enabledValueDiv.textContent = 'Enabled';
+        clicked = false;
+    }
+    else
+    {
+        currentGrid.removeEventListener('mouseover', changeTileColor);
+        enabledValueDiv.textContent = 'Disabled';
+        clicked = true;
+    }
+}
+
 
 
 

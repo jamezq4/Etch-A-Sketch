@@ -51,6 +51,60 @@ function removeChildren(parent)
     }
 }
 
+function changeGrid(e)
+{
+
+    //repositioning changegrid button properly
+    let buttons = document.querySelector('.buttons');
+    buttons.style.marginLeft = '220px';
+
+
+    let grid = document.querySelector('.grid');
+
+    //remove rows so we can replace grid everytime button is clicked
+    if (grid.children.length > 0)
+    {
+        removeChildren(grid);
+    }
+
+    //processing input
+    let gridNumber;
+    do
+    {
+        gridNumber = Number(prompt("Enter a grid size", "16 = 16 x 16"));
+    }
+    while (isNaN(gridNumber));
+
+    //calculating starting size of each tile in grid
+    let tileSize = Math.floor((1220 / gridNumber) - 4);
+
+    //nested for loops to create rows and columns
+    for (let i = 0; i < gridNumber; i++)
+    {
+        let row = document.createElement("div");
+        row.className = 'row';
+
+        for (let j = 0; j < gridNumber; j++)
+        {
+            let column = document.createElement("div");
+            column.className = 'column';
+            //column.id = '0'; this was used when adding 10 percent black everytime we hovered over a tile
+            column.style.width = tileSize.toString() + "px";
+            column.style.height = tileSize.toString() + "px";
+
+            row.appendChild(column);
+        }
+
+        grid.appendChild(row);
+    }
+
+    //remove justify content center so that page is displayed properly when grid is made
+    allContent.style.justifyContentt = '';
+
+    //function that puts everything in place when grid appears or changes type
+    displaySideContent();
+}
+
 
 
 

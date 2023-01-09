@@ -92,6 +92,7 @@ body {
 
     width: 250px;
     height: 80px;
+    margin: 10px;
     border: 0.1em solid #000000;
     border-radius: 0.12em;
     font-size: 0.9em;
@@ -102,12 +103,14 @@ body {
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align: center;
     transition: all 0.15s;
+    
 }
 
 
 #clear-all {
     width: 250px;
     height: 80px;
+    margin-left: 10px;
     border: 0.1em solid #000000;
     border-radius: 0.12em;
     font-size: 0.9em;

@@ -105,11 +105,29 @@ body {
 }
 
 
-#choose-grid:hover {
+#clear-all {
+    width: 250px;
+    height: 80px;
+    border: 0.1em solid #000000;
+    border-radius: 0.12em;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    font-weight: 700;
+    background-color: green;
+    color: aqua;
+    text-align: center;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.15s;
+}
+
+#choose-grid:hover,
+#clear-all:hover {
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color: #FFFFFF;
     border-color: #FFFFFF;
 }
+
+
 
 
 .color-div.show-color-div {
